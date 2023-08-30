@@ -162,9 +162,9 @@
 
     </div>
 
-    <div id="data-table_processing" class="dataTables_processing panel panel-default" style="display: none;">
+    <!-- <div id="data-table_processing" class="dataTables_processing panel panel-default" style="display: none;">
         {{trans('lang.processing')}}
-    </div>
+    </div> -->
 
 </div>
 

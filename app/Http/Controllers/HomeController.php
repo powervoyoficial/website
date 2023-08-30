@@ -13,11 +13,11 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        //$this->middleware('auth');
-      //   $route = \Route::currentRouteName();
-      //   if(!isset($_COOKIE['address_name']) && $route != "set-location"){
-    		// \Redirect::to('set-location')->send();
-      // 	}
+        $this->middleware('auth');
+        $route = \Route::currentRouteName();
+        if(!isset($_COOKIE['address_name']) && $route != "set-location"){
+    		\Redirect::to('set-location')->send();
+      	}
     }
 
     /**
@@ -33,4 +33,7 @@ class HomeController extends Controller
     {
     	return view('layer');
     }
+
+    
+ 
 }
